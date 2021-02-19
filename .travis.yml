@@ -1,0 +1,6 @@
+language: c
+compiler: gcc
+
+before_install:
+  - echo "Running travis scripts"
+  - make

@@ -1,0 +1,16 @@
+
+#ignore backups
+backups/
+*.backup
+
+#ignore misc stuff
+stuff/
+*.txt
+
+#ignore binaries
+a.out
+*.exe
+*.bin
+
+#broken file?
+.nfs0000000001460a5c00000141
