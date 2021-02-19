@@ -1,4 +1,4 @@
-/* Kyle Plummer, Mounika Gogula, James Schallert
+/* Kyle Plummer
  * ptracer.c
  * depends on pidlist.c
  * This program forks and executes one or more commands/programs passed as arguments.
