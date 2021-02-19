@@ -1,19 +1,6 @@
 # CSI402 - Final Project: Ptracer  
-Click [here](https://github.com/ualbany-csi402-f19/project-5/blob/master/PROGRESS.md) for a progress report.  
 
 Click [here](https://youtu.be/veZtc4XD-bI) for a demo video on Youtube.
-
-## Team Name: Group 5
-* [@kplumme1](https://github.com/kplumme1) - Kyle Plummer
-* [@JamesSchallert](https://github.com/JamesSchallert) - James Schallert
-* [@mgogula](https://github.com/mgogula) - Mounika Gogula
-
-Group Member | Tasks Assigned | tasks performed | Contribution
------------- | -------------- | --------------- | ------------
-@kplumme1 | release demo | brainstorming, research, setup, extensive coding, inline documentation | 40%
-@JamesSchallert | release demo | brainstorming, research, setup, coding, documentation | 30%
-@mgogula | release demo| brainstorming, setup, research, coding, demo video | 30%
-
 
 ## Ptracer Detailed Description
 This program forks and executes commands/programs passed as arguments. This child process is traced and all syscalls are monitored. ptracer has the following signature:  
@@ -44,25 +31,9 @@ As the output is prepared and sent to stdout we can see the syscalls invoked in 
   
 The verbose version of the file output has much more info and takes a bit of parsing to make sense of it.
 ![verbose output exceprt](https://i.imgur.com/CJbRlJQ.png)  
-  
-  
-  
-  
-
-## Missing Functionality
-  * Robust signal handling
-  * Grandchild and descendant tracing  
-  
-Our original vision for the program was also to include more verbose signal handling and to trace all desendant processes. To that end pidlist has the functionality to handle multiple traced processes. Unfortunately, we did not get more robust signal handling up and running until too late to make major feature implementations. As of now what needs to happen is to identify when a descendant process begins and attach the trace with PTRACE_ATTACH. This could be done by looking for our first child (and subsequent traced descendants) when they reveive a SIGCHLD signal. We could also handle the fork() group or syscalls differently to try and intercept information about the newly forked process and PTRACE_ATTACH at that point.  
+ 
   
     
-## Additional Functionality
-  * Verbose output
-  
-During design we had very verbose output in order to explore the cpu registers and signals. This functionality was kept in for the final version mostly intact and can be accessed by the -v argument instead of -f.
-
-
-
 
 # Ptracer Manual
 
