@@ -1,4 +1,4 @@
-/* Kyle Plummer, Mounika Gogula, James Schallert
+/* Kyle Plummer
  *
  * pidlist is a linked-list structure for holding information about traced processes
  * for use with ptracer.c. There are also a number of useful (and legacy) supporting
